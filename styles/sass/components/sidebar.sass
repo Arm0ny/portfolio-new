@@ -1,0 +1,16 @@
+@import ../abstract/variables
+@import ../abstract/mixins
+
+.sidebar
+  @include flex(column, center)
+  align-items: flex-start
+  position: fixed
+  transform-origin: center
+  transform: translate(-883px, 10px)
+  li
+    list-style: none
+    &:not(:nth-child(3))
+      margin-bottom: 2rem
+    &:hover
+      transform: scale(1.25)
+
