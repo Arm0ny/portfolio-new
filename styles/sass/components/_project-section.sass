@@ -1,0 +1,81 @@
+@import ../abstract/variables
+@import ../abstract/mixins
+
+
+
+#projects-section
+  @include flex(column, center)
+  align-items: flex-start
+  height: 100vh
+  width: 100%
+
+
+  h1
+    font-size: 2rem
+
+.projects-wrapper
+  @include flex (row, center)
+  justify-content: space-between
+  width: 100vw
+  height: 80%
+  overflow-x: auto
+  scroll-snap-type: inline mandatory
+  padding: 3rem 0
+  &-ms-overflow-style, &::-webkit-scrollbar
+    display: none
+    scrollbar-width: none
+
+
+.project
+  margin-left: 20rem
+  padding: 3rem
+  width: 50%
+  height: 80%
+  border-radius: 4rem
+  @include flex(row, center)
+  flex: none
+  scroll-snap-align: center
+  background-color: white
+  box-shadow: 5px 5px 24px 5px rgb(248, 209, 183)
+  &:last-child
+    margin-right: 30rem
+
+.project-text
+  position: relative
+  left: -10%
+  top: -5%
+  padding: 2rem
+  @include flex(column, center)
+  align-items: flex-start
+  gap: 3rem
+  height: 40%
+  background-color: white
+  box-shadow: 5px 5px 60px 1px rgb(251, 224, 200)
+  border-radius: .5rem
+
+.project-figure
+  position: relative
+  left: 10%
+  height: 80%
+  width: 100%
+  @include flex(column, center)
+  gap: 3rem
+  background-color: white
+  box-shadow: 5px 5px 60px 1px rgb(251, 224, 200)
+  border-radius: .5rem
+  button
+    padding: .5rem
+    width: 60%
+    color: $color-primary
+    background: rgb(0,0,0)
+    background: linear-gradient(45deg, rgba(0,0,0,1) 53%, rgba(167,167,167,1) 100%)
+    border: none
+    border-radius: 1rem
+    box-shadow: 5px 5px 24px 3px rgb(251, 224, 200)
+
+
+
+  img
+    height: auto
+    width: 50%
+
