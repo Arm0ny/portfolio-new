@@ -9,18 +9,18 @@
   padding: 0
   box-sizing: border-box
   font-family: $font-primary
+  color: $color-text
 
 body
-  padding: 0 5rem
-  @include flex(column, center)
-  background-color: $color-primary
-  height: 100%
+  @include flex(column)
+  @include size($height: 100%)
+  padding: 0 4rem
   overflow-x: hidden
+  background-color: $color-primary
 
 .main-section
-  height: 100vh
-  @include flex(column, center)
-  gap: 2rem
+  @include flex(column, $gap: 2rem)
+  @include size($height: 100vh)
   text-align: center
 
   h1
@@ -31,9 +31,6 @@ body
     color: black
     text-decoration: none
     border-bottom: 1px solid black
-
-  #canvas
-    position: absolute
 
 
 

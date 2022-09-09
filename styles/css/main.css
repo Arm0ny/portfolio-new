@@ -1,17 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
 .sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  align-items: flex-start;
+  gap: 0;
+  padding: 0.5rem;
   position: fixed;
-  transform-origin: center;
-  transform: translate(); }
+  top: 5%;
+  background-color: white;
+  z-index: 99;
+  border-radius: 3rem;
+  box-shadow: 5px 5px 24px 5px #f8d1b7; }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem; }
   .sidebar li {
     list-style: none; }
-    .sidebar li:not(:nth-child(3)) {
-      margin-bottom: 2rem; }
     .sidebar li:hover {
       transform: scale(1.25); }
 
@@ -20,109 +28,110 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-items: flex-start;
+  gap: 3rem;
+  width: 100vw;
   height: 100vh;
-  width: 100%; }
+  overflow-x: auto; }
   #projects-section h1 {
     font-size: 2rem; }
 
 .projects-wrapper {
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   justify-content: space-between;
-  width: 100vw;
-  height: 80%;
-  overflow-x: auto;
-  scroll-snap-type: inline mandatory;
-  padding: 3rem 0; }
+  gap: 5rem;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  background: transparent;
+  overflow-x: scroll;
+  scroll-snap-type: inline mandatory; }
   .projects-wrapper-ms-overflow-style, .projects-wrapper::-webkit-scrollbar {
     display: none;
     scrollbar-width: none; }
 
 .project {
-  margin-left: 20rem;
-  padding: 3rem;
-  width: 50%;
-  height: 80%;
-  border-radius: 4rem;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  flex: none;
-  scroll-snap-align: center;
+  gap: 0;
   background-color: white;
-  box-shadow: 5px 5px 24px 5px #f8d1b7; }
+  flex: none;
+  z-index: 5;
+  overflow: visible;
+  scroll-snap-align: center;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 30px 1px #fbe0c8; }
   .project:last-child {
     margin-right: 30rem; }
 
 .project-text {
-  position: relative;
-  left: -10%;
-  top: -5%;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   align-items: flex-start;
+  justify-content: center;
   gap: 3rem;
-  height: 40%;
+  width: auto;
+  height: 30vh;
   background-color: white;
-  box-shadow: 5px 5px 60px 1px #fbe0c8;
-  border-radius: 0.5rem; }
+  padding: 2rem; }
 
 .project-figure {
-  position: relative;
-  left: 10%;
-  height: 80%;
   width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  background-color: white;
-  box-shadow: 5px 5px 60px 1px #fbe0c8;
-  border-radius: 0.5rem; }
-  .project-figure button {
-    padding: 0.5rem;
+  gap: 3rem; }
+  .project-figure .button {
     width: 60%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem;
     color: #FAEBDE;
     background: black;
     background: linear-gradient(45deg, black 53%, #a7a7a7 100%);
     border: none;
-    border-radius: 1rem;
     box-shadow: 5px 5px 24px 3px #fbe0c8; }
   .project-figure img {
-    height: auto;
-    width: 50%; }
+    width: 100%;
+    height: 100%;
+    border: solid 3px black; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Quicksand", sans-serif;
+  color: black; }
 
 body {
-  padding: 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #FAEBDE;
+  gap: 0;
+  width: auto;
   height: 100%;
-  overflow-x: hidden; }
+  padding: 0 4rem;
+  overflow-x: hidden;
+  background-color: #FAEBDE; }
 
 .main-section {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  width: auto;
+  height: 100vh;
   text-align: center; }
   .main-section h1 {
     font-size: 3rem;
@@ -131,7 +140,5 @@ body {
     color: black;
     text-decoration: none;
     border-bottom: 1px solid black; }
-  .main-section #canvas {
-    position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
