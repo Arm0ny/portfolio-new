@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <meta charset="UTF-8">
+    <title>Mando WebDev</title>
+</head>
+<body>
+    <section class="main-section">
+        <h1>Hi, my name is<br/>Armando</h1>
+        <a href="#projects-section">scroll to discover me</a>
+    </section>
+
+
+    <section id="description">
+        <h1>About Me</h1>
+        <article id="my-card">
+            <img id="profile-img" src="./img/icons/socials/profile.jpeg" alt="my Pic">
+            <div id="description-center">
+            <p>Hi and Welcome to my Website! I'm Armando a Full stack WebDev/programmer/tech-addicted based in Rome,
+            I  really like creating awesome websites and I'll love to help you with your own platforms and projects</p>
+            <ul class="sidebar" id="stack">
+                <li class="icon"><img src="./img/icons/stack/bgdark/html-dark.svg" alt="HTML"/></li>
+                <li class="icon"><img src="./img/icons/stack/bgdark/css-dark.svg" alt="CSS"/></li>
+                <li class="icon"><img src="./img/icons/stack/bgdark/js-dark.svg" alt="JavaScript"/></li>
+                <li class="icon"><img src="./img/icons/stack/bgdark/react-dark.svg" alt="React"/></li>
+            </ul>
+            </div>
+            <aside class="sidebar" id="socials">
+                <ul class="sidebar-links">
+                    <li class="sidebar-link">
+                        <a href="https://github.com/Arm0ny"><img class="icon" src="./img/icons/socials/github-logo.svg" alt="GitHub"/></a>
+                    </li>
+                    <li class="sidebar-link">
+                        <a href="https://www.linkedin.com/in/armando-pagano-67787916a"><img class="icon" src="img/icons/socials/linkedin-logo.svg" alt="LinkedIn"/></a>
+                    </li>
+                    <li class="sidebar-link">
+                        <a href="https://twitter.com/home"><img class="icon" src="./img/icons/socials/twitter-logo.svg" alt="Twitter"/></a>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </section>
+
+
+    <section id="projects-section">
+        <h1>My Projects...</h1>
+        <div class="projects-wrapper" id="project-wrapper">
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">React Quotes generator</h2>
+                    <p class="project-caption">a simple Quotes generator made using React and JSX</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/quotes_app.png" alt="React Quotes generator"/>
+                    <a class="button" href="https://github.com/Arm0ny/quotes_app">view on Github</a>
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">React Markdown Previewer</h2>
+                    <p class="project-caption">An Editor made in React that renders GitHub flavored text as HTML</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/markup-editor.png" alt="Markup Editor"/>
+                    <a class="button" href="https://github.com/Arm0ny/react_markup_editor">view on Github</a>
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">Generative frame</h2>
+                    <p class="project-caption">With this JavaScript algorithm you can tweak some parameters to render your own Generative Frame</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/generative-art.png" alt="Generative frame"/>
+                    <a class="button" href="https://github.com/Arm0ny/Canvas_generative">view on Github</a>
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">NutritionDB</h2>
+                    <p>In-Development Full-Stack web application for Nutritionists to store, see and modify clients data</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/nutritionDB.png" alt="NutritionDB"/>
+                    <a class="button" href="https://github.com/Arm0ny/NutritionDB">view on Github</a>
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">Not a Plant Website</h2>
+                    <p class="project-caption">Sample Product Page made in HTML and CSS</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/product_page.png" alt="Product Landing Page"/>
+                    <a class="button" href="https://github.com/Arm0ny">view on Github</a>
+                </figure>
+            </article>
+        </div>
+    </section>
+
+
+
+<!--<script src="./js/p5.js"></script>
+<script src="./js/fourier.js"></script>
+<script src="./js/fractal.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./js/animations/project-card-animation.js"></script>
+</body>
+</html>

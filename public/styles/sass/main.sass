@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap')
+@import abstract/variables
+@import abstract/mixins
+@import components/sidebar
+@import 'components/description'
+@import 'components/project-section'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $font-primary
+  color: $color-text
+
+body
+  @include flex(column)
+  @include size($height: 100%)
+  padding: 0 4rem
+  overflow-x: hidden
+  background-color: $color-primary
+
+section
+  height: 100vh
+  width: 100%
+
+ul
+  @include flex()
+li
+  list-style-type: none
+
+.main-section
+  @include flex(column, $gap: 2rem)
+  @include size($height: 100vh)
+  text-align: center
+
+  h1
+    font-size: 3rem
+    line-height: 148%
+
+  a
+    color: black
+    text-decoration: none
+    border-bottom: 1px solid black
+
+
+
+
