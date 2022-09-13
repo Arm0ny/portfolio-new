@@ -8,15 +8,25 @@
   @include size(100vw, 100vh)
   overflow-x: auto
 
-
-  h1
-    z-index: 10
-    padding: .5rem 2rem
-    background-color: $color-secondary
-    border-radius: 10px
+  #controls
+    @include flex($gap: 2rem)
     position: relative
     top: 5%
-    box-shadow: 5px 5px 20px 1px rgb(251, 224, 200)
+    z-index: 10
+    h1
+      padding: .5rem 1.5rem
+      background-color: $color-secondary
+      border-radius: 20px
+      box-shadow: 5px 5px 20px 1px rgb(251, 224, 200)
+
+    button
+      border: none
+      background-color: $color-secondary
+      padding: .5rem
+      border-radius: 100%
+      box-shadow: 5px 5px 20px 1px rgb(251, 224, 200)
+      &:hover
+        transform: scale(1.25)
 
 
 .projects-wrapper
@@ -24,7 +34,7 @@
   @include flex (row, space-between, center, 5rem)
   @include size(100%)
   z-index: 4
-  background: transparent
+  //background: transparent
   overflow-x: scroll
   scroll-snap-type: inline mandatory
   //box-shadow: 5px 5px 24px 5px rgb(248, 209, 183)
@@ -60,6 +70,9 @@
   @include flex(column, $gap: 3rem)
   background-color: $color-secondary
   //box-shadow: 5px 5px 20px 1px rgb(251, 224, 200)
+  .project-buttons
+    @include flex(column, $gap: 1rem)
+    width: 100%
   .button
     @include size(60%)
     text-align: center

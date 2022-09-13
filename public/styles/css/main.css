@@ -32,7 +32,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0; }
+  gap: 0;
+  overflow-x: hidden; }
   #description h1 {
     padding: 0.5rem 2rem;
     background-color: white;
@@ -45,14 +46,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   padding: 1.5rem;
   background-color: white;
   box-shadow: 5px 5px 24px 4px #ffcdac;
   border-radius: 20px; }
   #my-card #profile-img {
-    min-width: 50px;
-    max-width: 300px;
+    min-width: 10%;
+    max-width: 100px;
     border-radius: 100%; }
   #my-card #description-center {
     display: flex;
@@ -79,14 +80,28 @@
   width: 100vw;
   height: 100vh;
   overflow-x: auto; }
-  #projects-section h1 {
-    z-index: 10;
-    padding: 0.5rem 2rem;
-    background-color: white;
-    border-radius: 10px;
+  #projects-section #controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     position: relative;
     top: 5%;
-    box-shadow: 5px 5px 20px 1px #fbe0c8; }
+    z-index: 10; }
+    #projects-section #controls h1 {
+      padding: 0.5rem 1.5rem;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 5px 5px 20px 1px #fbe0c8; }
+    #projects-section #controls button {
+      border: none;
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 100%;
+      box-shadow: 5px 5px 20px 1px #fbe0c8; }
+      #projects-section #controls button:hover {
+        transform: scale(1.25); }
 
 .projects-wrapper {
   padding: 1rem;
@@ -98,7 +113,6 @@
   width: 100%;
   height: auto;
   z-index: 4;
-  background: transparent;
   overflow-x: scroll;
   scroll-snap-type: inline mandatory; }
   .projects-wrapper-ms-overflow-style, .projects-wrapper::-webkit-scrollbar {
@@ -145,6 +159,13 @@
   justify-content: center;
   gap: 3rem;
   background-color: white; }
+  .project-figure .project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%; }
   .project-figure .button {
     width: 60%;
     height: auto;
@@ -183,6 +204,9 @@
   font-family: "Quicksand", sans-serif;
   color: black; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -193,7 +217,8 @@ body {
   height: 100%;
   padding: 0 4rem;
   overflow-x: hidden;
-  background-color: #FAEBDE; }
+  background-color: #FAEBDE;
+  scroll-behavior: smooth; }
 
 section {
   height: 100vh;
@@ -222,8 +247,12 @@ li {
     font-size: 3rem;
     line-height: 148%; }
   .main-section a {
-    color: black;
+    color: #000000;
     text-decoration: none;
     border-bottom: 1px solid black; }
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0 1rem; } }
 
 /*# sourceMappingURL=main.css.map */

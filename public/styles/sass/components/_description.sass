@@ -3,6 +3,7 @@
 
 #description
   @include flex(column, center)
+  overflow-x: hidden
   h1
     padding: .5rem 2rem
     background-color: $color-secondary
@@ -11,14 +12,14 @@
     box-shadow: 5px 5px 20px 1px rgb(251, 224, 200)
 
 #my-card
-  @include flex(column, center, $gap: 2rem)
+  @include flex(column, center, $gap: 3rem)
   padding: 1.5rem
   background-color: $color-secondary
   box-shadow: 5px 5px 24px 4px rgb(255, 205, 172)
   border-radius: 20px
   #profile-img
-    min-width: 50px
-    max-width: 300px
+    min-width: 10%
+    max-width: 100px
     border-radius: 100%
   #description-center
     @include flex(column, $align: flex-start, $gap: 2rem)

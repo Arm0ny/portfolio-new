@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/css/main.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./styles/css/main.css">
     <meta charset="UTF-8">
     <title>Mando WebDev</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <section class="main-section">
         <h1>Hi, my name is<br/>Armando</h1>
-        <a href="#projects-section">scroll to discover me</a>
+        <a href="#description">Click Me or scroll to discover</a>
     </section>
 
 
@@ -19,7 +36,7 @@
             <img id="profile-img" src="./img/icons/socials/profile.jpeg" alt="my Pic">
             <div id="description-center">
             <p>Hi and Welcome to my Website! I'm Armando a Full stack WebDev/programmer/tech-addicted based in Rome,
-            I  really like creating awesome websites and I'll love to help you with your own platforms and projects</p>
+            I  really like creating awesome websites, and I'll love to help you with your own platforms and projects</p>
             <ul class="sidebar" id="stack">
                 <li class="icon"><img src="./img/icons/stack/bgdark/html-dark.svg" alt="HTML"/></li>
                 <li class="icon"><img src="./img/icons/stack/bgdark/css-dark.svg" alt="CSS"/></li>
@@ -45,7 +62,9 @@
 
 
     <section id="projects-section">
-        <h1>My Projects...</h1>
+        <div id="controls">
+            <button id="button-left"> <img src="./img/icons/utils/arrow-left.png" alt="<"/> </button><h1>My Projects...</h1><button id="button-right"> <img src="./img/icons/utils/arrow-right.png" alt=">"/> </button>
+        </div>
         <div class="projects-wrapper" id="project-wrapper">
             <article class="project">
                 <div class="project-text">
@@ -54,7 +73,10 @@
                 </div>
                 <figure class="project-figure">
                     <img class="project-img" src="./img/projects/quotes_app.png" alt="React Quotes generator"/>
+                    <div class="project-buttons">
                     <a class="button" href="https://github.com/Arm0ny/quotes_app">view on Github</a>
+                    <a class="button" href="http://mando-webdev.ddns.net/quotes_app.html">Try it Out</a>
+                    </div>
                 </figure>
             </article>
             <article class="project">
@@ -64,7 +86,10 @@
                 </div>
                 <figure class="project-figure">
                     <img class="project-img" src="./img/projects/markup-editor.png" alt="Markup Editor"/>
+                    <div class="project-buttons">
                     <a class="button" href="https://github.com/Arm0ny/react_markup_editor">view on Github</a>
+                    <a class="button" href="http://mando-webdev.ddns.net/markup_editor.html">Try it Out</a>
+                    </div>
                 </figure>
             </article>
             <article class="project">
@@ -74,7 +99,10 @@
                 </div>
                 <figure class="project-figure">
                     <img class="project-img" src="./img/projects/generative-art.png" alt="Generative frame"/>
+                    <div class="project-buttons">
                     <a class="button" href="https://github.com/Arm0ny/Canvas_generative">view on Github</a>
+                    <a class="button" href="http://mando-webdev.ddns.net/generative_frames.html">Try it Out</a>
+                    </div>
                 </figure>
             </article>
             <article class="project">
@@ -84,7 +112,10 @@
                 </div>
                 <figure class="project-figure">
                     <img class="project-img" src="./img/projects/nutritionDB.png" alt="NutritionDB"/>
+                    <div class="project-buttons">
                     <a class="button" href="https://github.com/Arm0ny/NutritionDB">view on Github</a>
+                    <a class="button" href="#">Try it Out</a>
+                    </div>
                 </figure>
             </article>
             <article class="project">
@@ -94,19 +125,31 @@
                 </div>
                 <figure class="project-figure">
                     <img class="project-img" src="./img/projects/product_page.png" alt="Product Landing Page"/>
+                    <div class="project-buttons">
                     <a class="button" href="https://github.com/Arm0ny">view on Github</a>
+                    <a class="button" href="http://mando-webdev.ddns.net/product_page.html">Try it Out</a>
+                    </div>
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-text">
+                    <h2 class="project-title">Python Tech Documentation Sample</h2>
+                    <p class="project-caption">a sample tech documentation with code snippets and navigation made in HTML and CSS</p>
+                </div>
+                <figure class="project-figure">
+                    <img class="project-img" src="./img/projects/tech_doc.png" alt="React Quotes generator"/>
+                    <div class="project-buttons">
+                        <a class="button" href="https://github.com/Arm0ny/quotes_app">view on Github</a>
+                        <a class="button" href="http://mando-webdev.ddns.net/tech_doc.html">Try it Out</a>
+                    </div>
                 </figure>
             </article>
         </div>
     </section>
-
-
-
-<!--<script src="./js/p5.js"></script>
-<script src="./js/fourier.js"></script>
-<script src="./js/fractal.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="./js/animations/project-card-animation.js"></script>
+    <script type="module" src="js/animations/project-card-animations.js"></script>
+    <script type="module" src="js/animations/description-section-animations.js"></script>
+    <script src="js/utils/projects-scroll-onclick.js"></script>
 </body>
 </html>

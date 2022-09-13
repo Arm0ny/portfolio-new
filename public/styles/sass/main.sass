@@ -12,12 +12,16 @@
   font-family: $font-primary
   color: $color-text
 
+html
+  scroll-behavior: smooth
+
 body
   @include flex(column)
   @include size($height: 100%)
   padding: 0 4rem
   overflow-x: hidden
   background-color: $color-primary
+  scroll-behavior: smooth
 
 section
   height: 100vh
@@ -38,9 +42,13 @@ li
     line-height: 148%
 
   a
-    color: black
+    color: #000000
     text-decoration: none
     border-bottom: 1px solid black
+
+@media screen and (max-width: 500px)
+  body
+    padding: 0 1rem
 
 
 
