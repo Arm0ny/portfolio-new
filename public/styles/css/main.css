@@ -197,6 +197,47 @@
   .project-figure img {
     width: 90%;
     height: auto; } }
+#contacts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0; }
+  #contacts-section h1 {
+    padding: 0.5rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 20px 1px #fbe0c8; }
+  #contacts-section form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 5px 5px 24px 4px #ffcdac;
+    border-radius: 10px; }
+    #contacts-section form .form-input {
+      width: 100%;
+      background-color: #FAEBDE;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none; }
+    #contacts-section form #form-message {
+      height: 8rem; }
+    #contacts-section form #submit {
+      border: none;
+      padding: 1rem 3rem;
+      color: white;
+      background: black;
+      background: linear-gradient(45deg, black 53%, #a7a7a7 100%); }
+      #contacts-section form #submit:hover {
+        transform: scale(1.25); }
+
 * {
   margin: 0;
   padding: 0;

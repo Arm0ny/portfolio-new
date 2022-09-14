@@ -24,12 +24,14 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+<!---------------------------------BEGIN HERO SECTION------------------------>
     <section class="main-section">
         <h1>Hi, my name is<br/>Armando</h1>
         <p id="discover"> Scroll to discover...</p>
     </section>
+<!---------------------------------END HERO SECTION------------------------>
 
-
+<!---------------------------------BEGIN DESCRIPTION SECTION------------------------>
     <section id="description">
         <h1>About Me</h1>
         <article id="my-card">
@@ -37,14 +39,14 @@
             <div id="description-center">
             <p>Hi and Welcome to my Website! I'm Armando a Full stack WebDev/programmer/tech-addicted based in Rome,
             I  really like creating awesome websites, and I'll love to help you with your own platforms and projects</p>
-            <ul class="sidebar" id="stack">
+            <ul class="sidebar" id="stack"> <!-- BEGIN STACK SIDEBAR-->
                 <li class="icon"><img src="./img/icons/stack/bgdark/html-dark.svg" alt="HTML"/></li>
                 <li class="icon"><img src="./img/icons/stack/bgdark/css-dark.svg" alt="CSS"/></li>
                 <li class="icon"><img src="./img/icons/stack/bgdark/js-dark.svg" alt="JavaScript"/></li>
                 <li class="icon"><img src="./img/icons/stack/bgdark/react-dark.svg" alt="React"/></li>
-            </ul>
+            </ul>                           <!-- END STACK SIDEBAR-->
             </div>
-            <aside class="sidebar" id="socials">
+            <aside class="sidebar" id="socials"><!-- BEGIN SOCIALS SIDEBAR-->
                 <ul class="sidebar-links">
                     <li class="sidebar-link">
                         <a href="https://github.com/Arm0ny"><img class="icon" src="./img/icons/socials/github-logo.svg" alt="GitHub"/></a>
@@ -56,17 +58,19 @@
                         <a href="https://twitter.com/home"><img class="icon" src="./img/icons/socials/twitter-logo.svg" alt="Twitter"/></a>
                     </li>
                 </ul>
-            </aside>
+            </aside>                            <!-- END SOCIALS SIDEBAR-->
         </article>
     </section>
+<!---------------------------------END DESCRIPTION SECTION------------------------>
 
 
+<!---------------------------------BEGIN PROJECTS SECTION------------------------>
     <section id="projects-section">
         <div id="controls">
             <button id="button-left"> <img src="./img/icons/utils/arrow-left.png" alt="<"/> </button><h1>My Projects...</h1><button id="button-right"> <img src="./img/icons/utils/arrow-right.png" alt=">"/> </button>
         </div>
-        <div class="projects-wrapper" id="project-wrapper">
-            <article class="project">
+        <div class="projects-wrapper" id="project-wrapper"> <!--BEGIN PROJECTS CAROUSEL-->
+            <article class="project"> <!--BEGIN QUOTES APP PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">React Quotes generator</h2>
                     <p class="project-caption">a simple Quotes generator made using React and JSX</p>
@@ -78,8 +82,9 @@
                     <a class="button" href="http://mando-webdev.ddns.net/quotes_app.html">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-            <article class="project">
+            </article>                  <!--END QUOTES APP PROJECT-->
+
+            <article class="project">   <!--BEGIN MARKDOWN PREVIEWER PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">React Markdown Previewer</h2>
                     <p class="project-caption">An Editor made in React that renders GitHub flavored text as HTML</p>
@@ -91,8 +96,9 @@
                     <a class="button" href="http://mando-webdev.ddns.net/markup_editor.html">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-            <article class="project">
+            </article>                      <!--END MARKDOWN PREVIEWER PROJECT-->
+
+            <article class="project">       <!--BEGIN GENERATIVE FRAMES PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">Generative frame</h2>
                     <p class="project-caption">With this JavaScript algorithm you can tweak some parameters to render your own Generative Frame</p>
@@ -104,8 +110,9 @@
                     <a class="button" href="http://mando-webdev.ddns.net/generative_frames.html">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-            <article class="project">
+            </article>                      <!--END GENERATIVE FRAMES PROJECT-->
+
+            <article class="project">       <!--BEGIN NUTRITIONDB PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">NutritionDB</h2>
                     <p>In-Development Full-Stack web application for Nutritionists to store, see and modify clients data</p>
@@ -117,8 +124,9 @@
                     <a class="button" href="#">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-            <article class="project">
+            </article>                       <!--END NUTRITIONDB PROJECT-->
+
+            <article class="project">       <!--BEGIN PRODUCT PAGE PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">Not a Plant Website</h2>
                     <p class="project-caption">Sample Product Page made in HTML and CSS</p>
@@ -130,8 +138,9 @@
                     <a class="button" href="http://mando-webdev.ddns.net/product_page.html">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-            <article class="project">
+            </article>                      <!--END PRODUCT PAGE PROJECT-->
+
+            <article class="project">       <!--BEGIN TECH DOCUMENTATION PROJECT-->
                 <div class="project-text">
                     <h2 class="project-title">Python Tech Documentation Sample</h2>
                     <p class="project-caption">a sample tech documentation with code snippets and navigation made in HTML and CSS</p>
@@ -143,13 +152,29 @@
                         <a class="button" href="http://mando-webdev.ddns.net/tech_doc.html">Try it Out</a>
                     </div>
                 </figure>
-            </article>
-        </div>
+            </article>                       <!--END TECH DOCUMENTATION PROJECT-->
+
+        </div>                                          <!--END PROJECTS CAROUSEL-->
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="js/animations/project-card-animations.js"></script>
-    <script type="module" src="js/animations/description-section-animations.js"></script>
-    <script src="js/utils/projects-scroll-onclick.js"></script>
+<!---------------------------------END PROJECTS SECTION------------------------>
+
+<!---------------------------------BEGIN CONTACTS SECTION------------------------>
+    <section id="contacts-section">
+        <h1>Get in Touch!</h1>
+        <form action="https://formsubmit.co/456c5c1d9271826dac056ef66f153eb4" method="POST">
+        <input class="form-input" type="text" name="Name" id="name" placeholder="Full Name">
+        <input class="form-input" type="email" name="email" id="email" placeholder="youremail@example.com">
+        <textarea class="form-input" id="form-message" name="message" placeholder="your message"></textarea>
+        <input id="submit" type="submit">
+        </form>
+    </section>
+<!---------------------------------END CONTACTS SECTION------------------------>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script><!-- GSAP IMPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js" integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- GSAP PLUGIN IMPORT -->
+    <script type="module" src="js/animations/project-card-animations.js"></script><!--PROJECTS CARDS ANIMATION SCRIPT-->
+    <!--<script type="module" src="js/animations/description-section-animations.js"></script>-->
+    <script src="js/utils/projects-scroll-onclick.js"></script><!--PROJECTS CAROUSEL CONTROLS SCRIPT-->
+
 </body>
 </html>
